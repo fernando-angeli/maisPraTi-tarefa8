@@ -3,6 +3,7 @@ import exercicio_2.ProdutoDescontoTeste;
 import exercicio_3.FuncionarioTeste;
 import exercicio_4.FuncionarioTesteExercicio4;
 import exercicio_5.MeiosDeTransporte;
+import exercicio_6.SonsDeAnimais;
 
 public class Main {
     public static void main(String[] args) {
@@ -54,5 +55,14 @@ public class Main {
         System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
         MeiosDeTransporte.main(args);
 
+        /*6. Polimorfismo com Classes Abstratas
+        ○ Objetivo: Crie uma classe abstrata Animal com um método abstrato
+        emitirSom(). Crie subclasses Cachorro, Gato e Vaca, cada uma
+        implementando emitirSom() de maneira específica. Crie uma lista de
+        Animal no método principal e adicione instâncias de cada subclasse. Itere
+        sobre a lista e invoque o método emitirSom() para cada animal,
+        demonstrando o polimorfismo.*/
+        System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
+        SonsDeAnimais.main(args);
     }
 }
