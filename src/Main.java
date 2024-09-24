@@ -4,6 +4,7 @@ import exercicio_3.FuncionarioTeste;
 import exercicio_4.FuncionarioTesteExercicio4;
 import exercicio_5.MeiosDeTransporte;
 import exercicio_6.SonsDeAnimais;
+import exercicio_7.ProcessarPagamentos;
 
 public class Main {
     public static void main(String[] args) {
@@ -64,5 +65,17 @@ public class Main {
         demonstrando o polimorfismo.*/
         System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
         SonsDeAnimais.main(args);
+
+        /*
+        7. Abstração em um Sistema de Pagamentos
+        ○ Objetivo: Crie uma classe abstrata FormaPagamento com métodos
+        abstratos processarPagamento(double valor) e validarPagamento().
+        Crie classes concretas CartaoCredito, Boleto e Pix que herdam de
+        FormaPagamento e implementam os métodos abstratos. Adicione lógica de
+        validação específica para cada forma de pagamento e simule um sistema
+        que utilize diferentes formas de pagamento.*/
+        System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
+        ProcessarPagamentos.main(args);
+
     }
 }
