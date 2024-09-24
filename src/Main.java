@@ -2,6 +2,7 @@ import exercicio_1.ProdutoTeste;
 import exercicio_2.ProdutoDescontoTeste;
 import exercicio_3.FuncionarioTeste;
 import exercicio_4.FuncionarioTesteExercicio4;
+import exercicio_5.MeiosDeTransporte;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,6 +43,16 @@ public class Main {
         corretamente.*/
         System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
         FuncionarioTesteExercicio4.main(args);
+
+        /*5. Polimorfismo com Interfaces
+        ○ Objetivo: Crie uma interface IMeioTransporte com métodos acelerar() e
+        frear(). Implemente essa interface em classes Carro, Bicicleta e Trem.
+        No método principal, crie um array de IMeioTransporte e percorra-o
+        chamando acelerar() e frear() para cada objeto. Utilize polimorfismo
+        para que cada tipo de transporte implemente acelerar() e frear() de
+        maneira diferente.*/
+        System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
+        MeiosDeTransporte.main(args);
 
     }
 }
