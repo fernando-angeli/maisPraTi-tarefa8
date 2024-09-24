@@ -1,5 +1,6 @@
 import exercicio_1.ProdutoTeste;
 import exercicio_2.ProdutoDescontoTeste;
+import exercicio_3.FuncionarioTeste;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,6 +21,16 @@ public class Main {
         Implemente a lógica que lança uma exceção se o desconto for inválido.*/
         System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
         ProdutoDescontoTeste.main(args);
+
+        /*3. Criação de uma Hierarquia de Classes
+        ○ Objetivo: Crie uma classe Funcionario com atributos nome e salario. Em
+        seguida, crie duas subclasses: Gerente e Desenvolvedor. Adicione um
+        método calcularBonus que retorna um valor diferente para cada tipo de
+        funcionário (por exemplo, 20% do salário para Gerente e 10% para
+        Desenvolvedor). Utilize protected para permitir que as subclasses
+        acessem os atributos da classe base de forma segura.*/
+        System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
+        FuncionarioTeste.main(args);
 
     }
 }
