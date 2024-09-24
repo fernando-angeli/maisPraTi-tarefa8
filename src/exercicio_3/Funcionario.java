@@ -29,6 +29,10 @@ public class Funcionario {
         this.salario = salario;
     }
 
+    public void trabalhar(String cargo){
+        System.out.println("O funcionario " + this.nome + ", cargo: " + cargo + ", trabalha na empresa realizando as seguintes atividades:");
+    }
+
     @Override
     public String toString() {
         NumberFormat formatter = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));

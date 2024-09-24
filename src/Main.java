@@ -1,6 +1,7 @@
 import exercicio_1.ProdutoTeste;
 import exercicio_2.ProdutoDescontoTeste;
 import exercicio_3.FuncionarioTeste;
+import exercicio_4.FuncionarioTesteExercicio4;
 
 public class Main {
     public static void main(String[] args) {
@@ -31,6 +32,16 @@ public class Main {
         acessem os atributos da classe base de forma segura.*/
         System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
         FuncionarioTeste.main(args);
+
+        /*4. Sobrescrita de Métodos
+        ○ Objetivo: Na classe Funcionario, crie um método trabalhar(), que
+        imprime uma mensagem genérica sobre o trabalho realizado. Nas
+        subclasses Gerente e Desenvolvedor, sobrescreva esse método para
+        especificar o tipo de trabalho realizado por cada um. Utilize a anotação
+        @Override e explore como ela ajuda a garantir que a sobrescrita foi feita
+        corretamente.*/
+        System.out.println("\n >>> Exercício "+ exerciseNumber++ + " <<<");
+        FuncionarioTesteExercicio4.main(args);
 
     }
 }

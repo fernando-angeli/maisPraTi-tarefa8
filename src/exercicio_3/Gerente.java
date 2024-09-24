@@ -11,4 +11,11 @@ public class Gerente extends Funcionario{
         return this.salario * BONUS;
     }
 
+    @Override
+    public void trabalhar(String cargo) {
+        super.trabalhar(cargo);
+        System.out.println(" - Gerenciamento de equipes;");
+        System.out.println(" - Distribuição de atividades;");
+        System.out.println(" - Revisão de equipamentos.");
+    }
 }
