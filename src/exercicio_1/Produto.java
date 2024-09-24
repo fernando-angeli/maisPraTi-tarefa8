@@ -32,4 +32,10 @@ public class Produto {
         else throw new IllegalArgumentException("A quantidade em estoque não pode ser nula ou negativa.");
     }
 
+    public void aplicarDesconto(double porcentagem){
+        if(porcentagem > 50.0) throw new IllegalArgumentException("O percentual de desconto não pode ser superior a 50%.");
+        this.preco = this.preco * (100 - porcentagem)/100;
+    }
+
+
 }
